@@ -459,11 +459,18 @@ sql92
 	delete from 表名 【where 筛选条件】
 
 多表的删除：
-	delete 别名1，别名2
+	
+	# 92语法
+	delete 别名1(表1的别名删除表1)，别名2（表2的别名删除表2）
 	from 表1 别名1，表2 别名2
 	where 连接条件
 	and 筛选条件;
-
+	
+	# 99语法
+	delete 别名1, 别名2
+	from 表1 别名1
+	inner| left|right join 表2 别名2 on 连接条件
+	 where 筛选条件;
 
 方式2：truncate语句
 
