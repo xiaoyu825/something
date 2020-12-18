@@ -437,12 +437,13 @@ sql92
 	update 表名 set 字段=新值,字段=新值
 	【where 条件】
 修改多表语法：
-	# 92语法
+
+	#92语法
 	update 表1 别名1,表2 别名2
 	set 字段=新值，字段=新值
 	where 连接条件
 	and 筛选条件
-	# 99语法
+	#99语法
 	update 表1 别名
 	inner|left|right join 表2 别名
 	on 连接条件
